@@ -1,389 +1,337 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
+/* 个人主页配置文件 - 黄沛明 */
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
-// Splash Screen
-
+// 启动动画屏幕
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
-// Summary And Greeting Section
-
+// 动画设置
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true
 };
 
+// 问候语部分
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "黄沛明",
+  title: "你好，我是黄沛明",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "一名热爱技术的翻译硕士研究生 🚀 专注于AI辅助翻译、大语言模型优化与技术文档工程。擅长将AI技术应用于业务流程优化，致力于通过语言和技术提升商业效率。"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  displayGreeting: true
 };
 
-// Social Media Links
-
+// 社交媒体链接
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  github: "https://github.com/wongpm",
+  linkedin: "https://www.linkedin.com/in/wongpm/",
+  gmail: "wongpm@qq.com",
+  // 可以根据需要添加其他社交媒体
+  display: true
 };
 
-// Skills Section
-
+// 技能部分
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "我的专业技能",
+  subTitle: "技术驱动的语言服务专家，探索AI与翻译的无限可能",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ AI辅助翻译技术应用与大语言模型Prompt优化"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ 技术文档开发与本地化项目全流程管理"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Python数据分析、API开发与业务流程自动化"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "AI/LLM",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "数据分析",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      skillName: "技术文档",
+      fontAwesomeClassname: "fas fa-file-code"
+    },
+    {
+      skillName: "CAT工具",
+      fontAwesomeClassname: "fas fa-language"
+    },
+    {
+      skillName: "项目管理",
+      fontAwesomeClassname: "fas fa-tasks"
+    },
+    {
+      skillName: "Markdown",
+      fontAwesomeClassname: "fab fa-markdown"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Education Section
-
+// 教育经历
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
+      schoolName: "浙江财经大学",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      subHeader: "英语笔译硕士",
+      duration: "2023年9月 - 至今",
+      desc: "研究方向：AI辅助翻译技术，大语言模型Prompt优化",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "核心课程：国际金融翻译、本地化与翻译项目管理、语料库与计算机辅助翻译",
+        "2024年研究生学业奖学金一等奖"
       ]
     },
     {
-      schoolName: "Stanford University",
+      schoolName: "韶关学院",
       logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      subHeader: "商务英语学士",
+      duration: "2019年9月 - 2023年6月",
+      desc: "系统学习商务英语与跨境电商运营，培养国际商务沟通能力",
+      descBullets: [
+        "核心课程：国际市场营销、商务翻译、亚马逊跨境电商运营、微观经济学原理"
+      ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
+// 技术栈熟练度
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "AI与翻译技术",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "项目管理与流程优化",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Python与数据分析",
+      progressPercentage: "75%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
-// Work experience section
-
+// 工作经历
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "技术文档工程师",
+      company: "杭州海康威视数字技术股份有限公司",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "2025年3月 - 2025年8月",
+      desc: "负责机器视觉产品线技术文档开发与AI翻译优化项目",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "使用Oxygen完成5款机器视觉产品软件用户手册的开发与更新，推动文档缺陷率降低10%",
+        "通过设计迭代超过10组高质量提示词，将AI翻译准确率提升25%，创建AI智能体使人工校对工时减少50%",
+        "深入分析3家竞品文档体系，输出分析报告并成功应用于SDK文档优化"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
+      role: "项目经理",
+      company: "译禾（Yeehe）信息技术有限公司",
       companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "2024年10月 - 2025年1月",
+      desc: "负责游戏本地化项目全流程管理与质量优化",
+      descBullets: [
+        "协调超过10名内外部译员，管理超过50万字的翻译量，实现95%准时交付",
+        "引入Xbench工具进行自动化术语检查，设计标准化审校流程，使客户投诉率下降15%",
+        "优化多语言版本同步工作流，将项目平均周期缩短10%"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
+      role: "办公室助理",
+      company: "浙江泰隆商业银行",
       companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "2024年6月 - 2024年9月",
+      desc: "负责数字化流程优化与数据分析工作",
+      descBullets: [
+        "优化OA系统合同分类标签与检索逻辑，有效提升全行合同检索效率",
+        "清洗处理超过7万条历史业务数据，利用Excel与Python生成可视化分析报告"
+      ]
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+// 开源项目
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
-// Some big projects you have worked on
-
+// 重点项目
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "项目经历",
+  subtitle: "技术驱动的创新解决方案",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "基于ChatGPT API的游戏术语提取辅助工具",
+      projectDesc: "独立开发的智能术语管理系统，实现术语自动提取、风格智能校准与双语对齐功能，相比人工提取效率提升70%",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "查看详情",
+          url: "#"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "海康威视AI智能体搭建项目",
+      projectDesc: "基于公司内部大语言模型创建AI智能体，将特定字符串翻译的人工校对工时减少50%，显著提升翻译效率",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "查看详情",
+          url: "#"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// 成就与证书
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("荣誉与证书 🏆"),
+  subtitle: "专业认证与竞赛荣誉",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "CATTI杯全国翻译大赛一等奖",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "2024年CATTI杯全国翻译大赛英语笔译组一等奖，展现专业翻译能力",
       image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      imageAlt: "CATTI Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "证书详情",
+          url: "#"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "外研社·国才杯全国大学生外语能力大赛一等奖",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "2023年外研社·国才杯全国大学生外语能力大赛英语笔译一等奖",
       image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      imageAlt: "外研社国才杯 Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "证书详情",
+          url: "#"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      title: "专业资格认证",
+      subtitle: "英语专业八级 | 人事部翻译资格证(CATTI)二级",
       image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      imageAlt: "专业认证 Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "证书详情", url: "#"}
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Blogs Section
-
+// 博客文章（可选）
 const blogSection = {
-  title: "Blogs",
+  title: "技术分享",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "热爱分享AI翻译、技术文档与项目管理的实践经验",
+  displayMediumBlogs: "false",
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "#",
+      title: "如何使用ChatGPT API优化翻译工作流",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "分享如何利用ChatGPT API开发自动化术语提取工具，提升翻译效率70%的实践经验"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "#",
+      title: "大语言模型Prompt工程在翻译中的应用",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "探讨如何通过精心设计的Prompt提示词，将AI翻译准确率提升25%的方法论"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Talks Sections
-
+// 演讲分享（可选）
 const talkSection = {
-  title: "TALKS",
+  title: "分享经历",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "乐于分享技术与翻译的跨界实践经验"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "AI辅助翻译技术在企业中的应用",
+      subtitle: "浙江财经大学研究生学术分享会",
+      slides_url: "#",
+      event_url: "#"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // 如果暂无演讲经历可设为false
 };
 
-// Podcast Section
-
+// 播客（可选）
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+  title: emoji("播客 🎙️"),
+  subtitle: "分享关于AI、翻译与技术的思考",
+  podcast: [],
+  display: false // 如果暂无播客可设为false
 };
 
-// Resume Section
+// 简历下载
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  title: "简历下载",
+  subtitle: "欢迎下载我的完整简历",
+  display: true
 };
 
+// 联系方式
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("联系我 ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "有项目合作或技术交流？欢迎随时联系我",
+  number: "+86 17816182401",
+  email_address: "wongpm@qq.com"
 };
 
-// Twitter Section
-
+// Twitter信息（可选）
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "wongpm",
+  display: false // 如果不使用Twitter可设为false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+// 求职状态
+const isHireable = true; // 应届生找校招
 
 export {
   illustration,
