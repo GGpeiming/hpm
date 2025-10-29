@@ -1,5 +1,5 @@
 {
-  "homepage": "homepage": "https://ggpeiming.github.io/hpm",
+  "homepage": "homepage": ".",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +7,6 @@
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
-    "gh-pages": "^2.1.1",
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
     "react": "^16.10.2",
@@ -21,10 +20,11 @@
     "sass": "^1.32.8"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "lint": "eslint src --ext .js,.jsx",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
@@ -34,12 +34,7 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.3%", "not ie 11", "not dead", "not op_mini all"],
     "development": [
       ">0.3%",
       "not ie 11",
@@ -53,6 +48,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "dotenv": "^8.2.0",
-    "prettier": "^2.3.1"
+    "eslint": "^8.57.1",
+    "prettier": "^2.8.8"
   }
 }
