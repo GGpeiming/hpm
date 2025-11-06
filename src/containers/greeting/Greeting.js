@@ -54,7 +54,7 @@ export default function Greeting() {
                     download="CV_黄沛明.pdf"
                     className="download-link-button"
                   >
-                    <Button text="下载我的简历" />
+                    <Button text="简历PDF" />
                   </a>
                 )}
               </div>
