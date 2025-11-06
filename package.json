@@ -1,12 +1,13 @@
 {
-  "name": "developerfolio",
+  "homepage": "https://ggpeiming.github.io/hpm/",
+  "name": "hpm",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://GGpeiming.github.io/hpm",
   "dependencies": {
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "gh-pages": "^2.1.1",
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
     "react": "^16.10.2",
@@ -20,17 +21,14 @@
     "sass": "^1.32.8"
   },
   "scripts": {
-    "lint": "eslint src --ext .js,.jsx",
-    "format:check": "prettier --check .",
-    "format:fix": "prettier --write .",
+    "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
+    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write './**/*.{js,css,json,scss}'",
-    "check-format": "prettier -c './**/*.{js,css,json,scss}'",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
+    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,8 +53,6 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "dotenv": "^8.2.0",
-    "eslint": "^8.57.1",
-    "gh-pages": "^6.3.0",
-    "prettier": "^2.8.8"
+    "prettier": "^2.3.1"
   }
 }
