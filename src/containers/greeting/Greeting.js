@@ -39,21 +39,30 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="联系我" href="#contact" />
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    download="CV_黄沛明.pdf"
                     className="download-link-button"
                   >
-                    <Button text="Download my resume" />
+                    <Button text="下载我的简历" />
                   </a>
                 )}
               </div>
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
+            {/* 👇 修改这部分：添加个人照片显示逻辑 */}
+            {greeting.displayProfileImage && greeting.profileImage ? (
+              <div className="profile-image-container">
+                <img
+                  src={greeting.profileImage}
+                  alt={greeting.username}
+                  className="profile-image"
+                />
+              </div>
+            ) : illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img

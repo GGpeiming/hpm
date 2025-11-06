@@ -20,17 +20,20 @@ const greeting = {
   username: "黄沛明",
   title: "你好，我是黄沛明",
   subTitle: emoji(
-    "一名热爱技术的翻译硕士研究生 🚀 专注于AI辅助翻译、大语言模型优化与技术文档工程。擅长将AI技术应用于业务流程优化，致力于通过语言和技术提升商业效率。"
+    "一名热爱技术的翻译硕士研究生。专注于AI辅助翻译、大语言模型优化与技术文档工程。擅长将AI技术应用于业务流程优化，致力于通过语言和技术提升商业效率。"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
-  displayGreeting: true
+    "https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink",
+  displayGreeting: true,
+   // 👇 添加以下两行
+  profileImage: require("./assets/images/personal photo.png"),
+  displayProfileImage: true
 };
 
 // 社交媒体链接
 const socialMediaLinks = {
-  github: "https://github.com/wongpm",
-  linkedin: "https://www.linkedin.com/in/wongpm/",
+  github: "www.linkedin.com/in/alan-wong-a13589275",
+  linkedin: "www.linkedin.com/in/alan-wong-a13589275",
   gmail: "wongpm@qq.com",
   // 可以根据需要添加其他社交媒体
   display: true
@@ -142,7 +145,7 @@ const workExperiences = {
     {
       role: "技术文档工程师",
       company: "杭州海康威视数字技术股份有限公司",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/Hikvision.png"),
       date: "2025年3月 - 2025年8月",
       desc: "负责机器视觉产品线技术文档开发与AI翻译优化项目",
       descBullets: [
@@ -154,7 +157,7 @@ const workExperiences = {
     {
       role: "项目经理",
       company: "译禾（Yeehe）信息技术有限公司",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/Yihe.png"),
       date: "2024年10月 - 2025年1月",
       desc: "负责游戏本地化项目全流程管理与质量优化",
       descBullets: [
@@ -166,7 +169,7 @@ const workExperiences = {
     {
       role: "办公室助理",
       company: "浙江泰隆商业银行",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/Tailong.png"),
       date: "2024年6月 - 2024年9月",
       desc: "负责数字化流程优化与数据分析工作",
       descBullets: [
@@ -180,7 +183,7 @@ const workExperiences = {
 // 开源项目
 const openSource = {
   showGithubProfile: "true",
-  display: true
+  display: false
 };
 
 // 重点项目
@@ -189,7 +192,7 @@ const bigProjects = {
   subtitle: "技术驱动的创新解决方案",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/term-api.webp"),
       projectName: "基于ChatGPT API的游戏术语提取辅助工具",
       projectDesc: "独立开发的智能术语管理系统，实现术语自动提取、风格智能校准与双语对齐功能，相比人工提取效率提升70%",
       footerLink: [
@@ -200,8 +203,8 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "海康威视AI智能体搭建项目",
+      image: require("./assets/images/llm-agent.webp"),
+      projectName: "翻译AI智能体搭建项目",
       projectDesc: "基于公司内部大语言模型创建AI智能体，将特定字符串翻译的人工校对工时减少50%，显著提升翻译效率",
       footerLink: [
         {
@@ -221,10 +224,10 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "CATTI杯全国翻译大赛一等奖",
+      title: "CATTI杯 一等奖",
       subtitle:
-        "2024年CATTI杯全国翻译大赛英语笔译组一等奖，展现专业翻译能力",
-      image: require("./assets/images/codeInLogo.webp"),
+        "2024年CATTI杯全国翻译大赛英语笔译组一等奖",
+      image: require("./assets/images/catti-cup.webp"),
       imageAlt: "CATTI Logo",
       footerLink: [
         {
@@ -234,10 +237,10 @@ const achievementSection = {
       ]
     },
     {
-      title: "外研社·国才杯全国大学生外语能力大赛一等奖",
+      title: "外研社·国才杯 一等奖",
       subtitle:
         "2023年外研社·国才杯全国大学生外语能力大赛英语笔译一等奖",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/waiyanshe.webp"),
       imageAlt: "外研社国才杯 Logo",
       footerLink: [
         {
@@ -247,9 +250,9 @@ const achievementSection = {
       ]
     },
     {
-      title: "专业资格认证",
+      title: "英语专业资格认证",
       subtitle: "英语专业八级 | 人事部翻译资格证(CATTI)二级",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/tem8.webp"),
       imageAlt: "专业认证 Logo",
       footerLink: [
         {name: "证书详情", url: "#"}
@@ -319,8 +322,8 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("联系我 ☎️"),
   subtitle:
-    "有项目合作或技术交流？欢迎随时联系我",
-  number: "+86 17816182401",
+    "有项目合作或交流？欢迎随时联系我",
+  number: "微信：GGpeiming",
   email_address: "wongpm@qq.com"
 };
 
