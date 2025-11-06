@@ -53,7 +53,7 @@ export default function Greeting() {
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
-                    download="CV_黄沛明.pdf"
+                    download="resume.pdf"
                     className="download-link-button"
                   >
                     <Button text="下载简历" />
