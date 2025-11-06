@@ -14,11 +14,7 @@ export default function Footer() {
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           @{" "}
-          <a
-            href="https://wongpm.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://wongpm.com" target="_blank" rel="noreferrer">
             www.wongpm.com
           </a>
         </p>

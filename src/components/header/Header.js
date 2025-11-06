@@ -73,7 +73,9 @@ function Header() {
           )}
           {viewResume && (
             <li>
-              <a href="https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink">作品集</a>
+              <a href="https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink">
+                作品集
+              </a>
             </li>
           )}
           <li>

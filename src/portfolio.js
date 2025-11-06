@@ -25,7 +25,7 @@ const greeting = {
   resumeLink:
     "https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink",
   displayGreeting: true,
-   // 👇 添加以下两行
+  // 👇 添加以下两行
   profileImage: require("./assets/images/personal photo.png"),
   displayProfileImage: true
 };
@@ -44,13 +44,9 @@ const skillsSection = {
   title: "我的专业技能",
   subTitle: "技术驱动的语言服务专家，探索AI与翻译的无限可能",
   skills: [
-    emoji(
-      "⚡ AI辅助翻译技术应用与大语言模型Prompt优化"
-    ),
+    emoji("⚡ AI辅助翻译技术应用与大语言模型Prompt优化"),
     emoji("⚡ 技术文档开发与本地化项目全流程管理"),
-    emoji(
-      "⚡ Python数据分析、API开发与业务流程自动化"
-    )
+    emoji("⚡ Python数据分析、API开发与业务流程自动化")
   ],
 
   softwareSkills: [
@@ -194,7 +190,8 @@ const bigProjects = {
     {
       image: require("./assets/images/term-api.webp"),
       projectName: "基于ChatGPT API的游戏术语提取辅助工具",
-      projectDesc: "独立开发的智能术语管理系统，实现术语自动提取、风格智能校准与双语对齐功能，相比人工提取效率提升70%",
+      projectDesc:
+        "独立开发的智能术语管理系统，实现术语自动提取、风格智能校准与双语对齐功能，相比人工提取效率提升70%",
       footerLink: [
         {
           name: "查看详情",
@@ -205,7 +202,8 @@ const bigProjects = {
     {
       image: require("./assets/images/llm-agent.webp"),
       projectName: "翻译AI智能体搭建项目",
-      projectDesc: "基于公司内部大语言模型创建AI智能体，将特定字符串翻译的人工校对工时减少50%，显著提升翻译效率",
+      projectDesc:
+        "基于公司内部大语言模型创建AI智能体，将特定字符串翻译的人工校对工时减少50%，显著提升翻译效率",
       footerLink: [
         {
           name: "查看详情",
@@ -225,8 +223,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "CATTI杯 一等奖",
-      subtitle:
-        "2024年CATTI杯全国翻译大赛英语笔译组一等奖",
+      subtitle: "2024年CATTI杯全国翻译大赛英语笔译组一等奖",
       image: require("./assets/images/catti-cup.webp"),
       imageAlt: "CATTI Logo",
       footerLink: [
@@ -238,8 +235,7 @@ const achievementSection = {
     },
     {
       title: "外研社·国才杯 一等奖",
-      subtitle:
-        "2023年外研社·国才杯全国大学生外语能力大赛英语笔译一等奖",
+      subtitle: "2023年外研社·国才杯全国大学生外语能力大赛英语笔译一等奖",
       image: require("./assets/images/waiyanshe.webp"),
       imageAlt: "外研社国才杯 Logo",
       footerLink: [
@@ -254,9 +250,7 @@ const achievementSection = {
       subtitle: "英语专业八级 | 人事部翻译资格证(CATTI)二级",
       image: require("./assets/images/tem8.webp"),
       imageAlt: "专业认证 Logo",
-      footerLink: [
-        {name: "证书详情", url: "#"}
-      ]
+      footerLink: [{name: "证书详情", url: "#"}]
     }
   ],
   display: true
@@ -265,8 +259,7 @@ const achievementSection = {
 // 博客文章（可选）
 const blogSection = {
   title: "技术分享",
-  subtitle:
-    "热爱分享AI翻译、技术文档与项目管理的实践经验",
+  subtitle: "热爱分享AI翻译、技术文档与项目管理的实践经验",
   displayMediumBlogs: "false",
   blogs: [
     {
@@ -288,9 +281,7 @@ const blogSection = {
 // 演讲分享（可选）
 const talkSection = {
   title: "分享经历",
-  subtitle: emoji(
-    "乐于分享技术与翻译的跨界实践经验"
-  ),
+  subtitle: emoji("乐于分享技术与翻译的跨界实践经验"),
 
   talks: [
     {
@@ -321,8 +312,7 @@ const resumeSection = {
 // 联系方式
 const contactInfo = {
   title: emoji("联系我 ☎️"),
-  subtitle:
-    "有项目合作或交流？欢迎随时联系我",
+  subtitle: "有项目合作或交流？欢迎随时联系我",
   number: "微信：GGpeiming",
   email_address: "wongpm@qq.com"
 };
