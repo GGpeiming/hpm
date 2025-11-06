@@ -51,13 +51,11 @@ export default function Greeting() {
                   />
                 )}
                 {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="下载简历" />
-                  </a>
+                  <Button 
+                    text="下载简历" 
+                    newTab={true}
+                    href="https://v01mc2mbc8k.feishu.cn/file/UM1ybsgEgo401txerYMcBQPZnXf?from=from_copylink" 
+                    />
                 )}
               </div>
             </div>
