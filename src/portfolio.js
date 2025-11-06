@@ -93,7 +93,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "浙江财经大学",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/zjufeLogo.png"),
       subHeader: "英语笔译硕士",
       duration: "2023年9月 - 至今",
       desc: "研究方向：AI辅助翻译技术，大语言模型Prompt优化",
@@ -104,7 +104,7 @@ const educationInfo = {
     },
     {
       schoolName: "韶关学院",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/sgxyLogo.png"),
       subHeader: "商务英语学士",
       duration: "2019年9月 - 2023年6月",
       desc: "系统学习商务英语与跨境电商运营，培养国际商务沟通能力",
