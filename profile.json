@@ -1,0 +1,14 @@
+{
+  "data": {
+    "user": {
+      "name": "黄沛明",
+      "bio": "一名热爱技术的翻译硕士研究生 🚀 专注于AI辅助翻译、大语言模型优化与技术文档工程",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/12345678?v=4",
+      "location": "中国",
+      "pinnedItems": {
+        "totalCount": 0,
+        "edges": []
+      }
+    }
+  }
+}
