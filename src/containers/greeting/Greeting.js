@@ -6,7 +6,7 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import {illustration, greeting, portfolioSection} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -40,6 +40,14 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="联系我" href="#contact" />
+                {/* 👇 添加作品集按钮 */}
+                {portfolioSection.display && portfolioSection.portfolioLink && (
+                 <Button 
+                  text="作品集" 
+                  newTab={true}
+                  href={"https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink"} 
+                 />
+                 )}
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}

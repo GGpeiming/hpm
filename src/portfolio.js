@@ -42,7 +42,7 @@ const socialMediaLinks = {
 // 技能部分
 const skillsSection = {
   title: "我的专业技能",
-  subTitle: "技术驱动的语言服务专家，探索AI与翻译的无限可能",
+  subTitle: "技术驱动的语言服务从业者，探索AI与翻译的无限可能",
   skills: [
     emoji("⚡ AI辅助翻译技术应用与大语言模型Prompt优化"),
     emoji("⚡ 技术文档开发与本地化项目全流程管理"),
@@ -309,6 +309,15 @@ const resumeSection = {
   display: true
 };
 
+// 👇 添加这个配置
+// 作品集部分
+const portfolioSection = {
+  title: "作品集",
+  subtitle: "查看我的项目作品与案例展示",
+  portfolioLink: "https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink", // 👈 替换为实际链接
+  display: true
+};
+
 // 联系方式
 const contactInfo = {
   title: emoji("联系我 ☎️"),
@@ -344,5 +353,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  portfolioSection
 };
