@@ -314,7 +314,8 @@ const resumeSection = {
 const portfolioSection = {
   title: "作品集",
   subtitle: "查看我的项目作品与案例展示",
-  portfolioLink: "https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink", // 👈 替换为实际链接
+  portfolioLink:
+    "https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink", // 👈 替换为实际链接
   display: true
 };
 

@@ -42,19 +42,21 @@ export default function Greeting() {
                 <Button text="联系我" href="#contact" />
                 {/* 👇 添加作品集按钮 */}
                 {portfolioSection.display && portfolioSection.portfolioLink && (
-                 <Button 
-                  text="作品集" 
-                  newTab={true}
-                  href={"https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink"} 
-                 />
-                 )}
+                  <Button
+                    text="作品集"
+                    newTab={true}
+                    href={
+                      "https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink"
+                    }
+                  />
+                )}
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
                     download="CV_黄沛明.pdf"
                     className="download-link-button"
                   >
-                    <Button text="简历PDF" />
+                    <Button text="下载简历" />
                   </a>
                 )}
               </div>
