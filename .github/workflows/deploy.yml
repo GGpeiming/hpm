@@ -26,8 +26,7 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: Update npm 🚀
-        run: npm install -g npm@latest
+      # 移除npm更新步骤，以兼容Node.js 18环境
 
       - name: Install and Build 🔧 # Build the Project
         run: |
