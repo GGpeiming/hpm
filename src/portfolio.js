@@ -20,10 +20,10 @@ const greeting = {
   username: "黄沛明",
   title: "你好，我是黄沛明",
   subTitle: emoji(
-    "一名热爱技术的翻译硕士研究生。专注于AI辅助翻译、大语言模型优化与技术文档工程。擅长将AI技术应用于业务流程优化，致力于通过语言和技术提升商业效率。"
+    "一名热爱技术的翻译硕士研究生，专注于AI辅助翻译、本地化项目管理与技术文档工程。擅长将AI技术应用于业务流程优化，致力于通过语言和技术提升商业效率。"
   ),
   resumeLink:
-    "https://v01mc2mbc8k.feishu.cn/file/XRZfbF3MsozZIHxUW8ecA95AnLR?from=from_copylink",
+    "https://v01mc2mbc8k.feishu.cn/file/BLisbbbifowo4xxID6ScxTlonAh?from=from_copylink",
   displayGreeting: true,
   // 👇 添加以下两行
   profileImage: require("./assets/images/personal photo.png"),
@@ -46,7 +46,7 @@ const skillsSection = {
   skills: [
     emoji("⚡ AI辅助翻译技术应用与大语言模型Prompt优化"),
     emoji("⚡ 技术文档开发与本地化项目全流程管理"),
-    emoji("⚡ Python数据分析、API开发与业务流程自动化")
+    emoji("⚡ Python数据分析、海外业务流程自动化")
   ],
 
   softwareSkills: [
@@ -95,7 +95,7 @@ const educationInfo = {
       logo: require("./assets/images/zjufeLogo.png"),
       subHeader: "英语笔译硕士",
       duration: "2023年9月 - 至今",
-      desc: "研究方向：AI辅助翻译技术，大语言模型Prompt优化",
+      desc: "研究方向：计算机辅助翻译与AI辅助翻译 ",
       descBullets: [
         "核心课程：国际金融翻译、本地化与翻译项目管理、语料库与计算机辅助翻译",
         "2024年研究生学业奖学金一等奖"
@@ -163,7 +163,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "办公室助理",
+      role: "海外助理",
       company: "浙江泰隆商业银行",
       companylogo: require("./assets/images/Tailong.png"),
       date: "2024年6月 - 2024年9月",

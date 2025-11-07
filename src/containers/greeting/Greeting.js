@@ -54,7 +54,7 @@ export default function Greeting() {
                   <Button 
                     text="下载简历" 
                     newTab={true}
-                    href="https://v01mc2mbc8k.feishu.cn/file/UM1ybsgEgo401txerYMcBQPZnXf?from=from_copylink" 
+                    href="https://v01mc2mbc8k.feishu.cn/file/BLisbbbifowo4xxID6ScxTlonAh?from=from_copylink" 
                     />
                 )}
               </div>
